@@ -2,7 +2,7 @@
 print("Hello, World!"); print('1234')
 
 a = 1 + 2 # 더하기
-print(a) # 주석 처
+print(a) # 주석 처리
 
 if a == 3:
     print("3입니다.");
