@@ -64,6 +64,8 @@ print(a, b, c)
 d, e, f = (4, 5, 6)
 print(d, e, f)
 
-x = input().split()
-a, b = x
-print(a, b)
+#x = input().split()
+#a, b = x
+#print(a, b)
+
+print(list(range(5, -10, -2)))
