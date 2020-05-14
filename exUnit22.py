@@ -84,3 +84,8 @@ print(a is b)
 print(a == b)
 b[2] = 99
 print(a, b)
+
+#for 반복문으로 요소 출력하기
+a = [38,21,53,62,19]
+for i, v in enumerate(a, start=2) :
+    print(i, v)
