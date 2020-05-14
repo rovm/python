@@ -87,5 +87,33 @@ print(a, b)
 
 #for 반복문으로 요소 출력하기
 a = [38,21,53,62,19]
-for i, v in enumerate(a, start=2) :
+for i, v in enumerate(a, start=1) :
     print(i, v)
+
+#가장 작은 수롸 가장 큰 수 구하기
+a = [38,21,53,62,19]
+smallest = a[0]
+for i in a:
+    if i < smallest:
+        smallest = i
+print(smallest)
+
+a = [38,21,53,62,19]
+largest = a[0]
+for i in a:
+    if i > largest:
+        largest = i
+print(largest)
+
+a = [38,21,53,62,19]
+a.sort()
+print(a[0])
+a.sort(reverse=True)
+print(a[0])
+
+a = [10,10,10,10,10]
+x = 0
+for i in a :
+    x += i
+print(x)
+print(sum(a))
