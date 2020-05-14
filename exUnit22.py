@@ -67,3 +67,20 @@ print(a)
 a = [10,20,30]
 a[len(a):] = [500]
 print(a)
+
+#리스트의 할당과 복사 알아보기
+a = [0,0,0,0,0]
+b = a
+
+print(a is b)
+
+b[2] = 99
+print(a, b)
+
+a = [0,0,0,0,0]
+b = a.copy()
+print(b)
+print(a is b)
+print(a == b)
+b[2] = 99
+print(a, b)
