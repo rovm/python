@@ -86,3 +86,15 @@ for i in a:
         line.append(0)
     b.append(line)
 print(b)
+
+a = [[10,20],[30,40]]
+b = a.copy()
+b[0][0] = 500
+print(a,b)
+
+a = [[10,20],[30,40]]
+import copy
+b = copy.deepcopy(a)
+b[0][0] = 500
+print(a,b)
+
