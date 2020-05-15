@@ -58,3 +58,31 @@ while i < len(a):
     x, y = a[i]
     print(x,y)
     i += 1
+
+#for 반복문으로 1차워 리스트 만들기
+a = []
+
+for i in range(10):
+    a.append(0)
+print(a)
+
+a =  []
+for i in range(3):
+    line = []
+    for j in range(2):
+        line.append(0)
+    a.append(line)
+print(a)
+
+a = [[0 for j in range(2)] for i in range(3)]
+print(a)
+
+a = [3,1,3,2,5]
+b = []
+
+for i in a:
+    line = []
+    for j in range(i):
+        line.append(0)
+    b.append(line)
+print(b)
