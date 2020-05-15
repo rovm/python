@@ -40,3 +40,21 @@ print(a)
 
 from pprint import pprint
 pprint(a, indent=4, width=20)
+
+#반복문으로 2차원 리스트의 요소를 모두 출력하기
+a = [[10,20],[30,40],[50,60]]
+for x,y in a:
+    print(x,y)
+
+for i in a:
+    for j in i:
+        print(j, end= ' ')
+    print()
+
+a = [[10,20],[30,40],[50,60]]
+
+i = 0
+while i < len(a):
+    x, y = a[i]
+    print(x,y)
+    i += 1
