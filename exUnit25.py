@@ -63,3 +63,17 @@ print(y['z'])
 
 z = defaultdict(lambda: 'python')
 print(z['a'])
+
+#반복문으로 딕셔너리의 키-값 쌍을 모두 출력하기
+x = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
+for i in x :
+    print(i, end=' ')
+
+for key, value in x.items():
+    print(key, value)
+
+for key in x.keys():
+    print(key, end =' ')
+
+for value in x.values():
+    print(value, end=' ')
