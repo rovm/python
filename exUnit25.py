@@ -108,3 +108,25 @@ terrestrial_planet = {
 }
  
 print(terrestrial_planet['Venus']['mean_radius'])
+
+#딕셔너리 할당과 복사
+x = {'a': 0, 'b': 0, 'c': 0, 'd': 0}
+y = x.copy()
+print(x is y)
+print(x == y)
+y['a'] = 99
+print(x)
+print(y)
+
+#중첩 딕셔너리의 할당과 복사 알아보기
+x = {'a': {'python': '2.7'}, 'b': {'python': '3.6'}}
+y = x.copy()
+y['a']['python'] = '2.7.15'
+print(x)
+print(y)
+
+import copy
+y = copy.deepcopy(x)
+y['a']['python'] = '2.7'
+print(x)
+print(y)
