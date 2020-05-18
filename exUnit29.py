@@ -24,3 +24,23 @@ x = add(10,20)
 print(x)
 print(add.__doc__)
 print(help(add))
+
+#함수 결과를 반환하기
+def add(a,b):
+    return a+b
+
+print(add(10,20))
+
+#return 으로 함수 중간에서 빠져나오기
+def not_ten(a):
+    if a == 10:
+        return
+    print(a, '입니다.',sep="")
+not_ten(5)
+not_ten(10)
+
+#함수에서 값을 여러 개 반환하기
+def add_sub(a,b):
+    return a+b, a-b
+x,y = add_sub(10,20)
+print(x, y)
