@@ -29,3 +29,11 @@ def print_numbers(a, *args):
 print_numbers(1)
 print_numbers(1,10,20)
 print_numbers(*[10,20,30])
+
+#키워드 인수 사용하기
+def personal_info(name,age,address):
+    print('이름: ', name)
+    print('나이: ', age)
+    print('주소: ', address)
+personal_info('홍길동', 30, '서울시 용산구 이촌동')
+personal_info(age=30, address='서울시 용산구 이촌동', name='홍길동')
