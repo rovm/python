@@ -103,3 +103,22 @@ print(a)
 #세트의 요소 개수 구하기
 a = {1,2,3,4}
 print(len(a))
+
+#세트의 할당과 복사
+a = {1,2,3,4}
+b = a
+print(a is b)
+b.add(5)
+print(a)
+print(b)
+
+a = {1,2,3,4}
+b = a.copy()
+print(a is b)
+print(a == b)
+
+a = {1,2,3,4}
+b = a.copy()
+b.add(5)
+print(a)
+print(b)
