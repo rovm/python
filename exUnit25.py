@@ -77,3 +77,8 @@ for key in x.keys():
 
 for value in x.values():
     print(value, end=' ')
+print()
+#딕셔너리 표현식에서 if 조건문 사용하기
+x = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
+x = {key: value for key, value in x.items() if value != 20}
+print(x)
