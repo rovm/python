@@ -75,4 +75,31 @@ print(a == {1,2,3,4})
 print(a == {4,3,2,1})
 print(a != {1,2,3,4})
 
-세트가 겹치지 않는지 확인하기
+#세트가 겹치지 않는지 확인하기
+a = {1,2,3,4}
+print(a.isdisjoint({5,6,7,8}))
+print(a.isdisjoint({3,4,5,6}))
+
+#세트에 요소 추가하기
+a = {1,2,3,4}
+a.add(5)
+print(a)
+a.remove(3)
+print(a)
+a.discard(2)
+print(a)
+a.discard(3)
+print(a)
+
+#세트에서 임의의 요소 삭제하기
+a = {1,2,3,4}
+a.pop()
+print(a)
+
+#세트의 모든 요소를 삭제하기
+a.clear()
+print(a)
+
+#세트의 요소 개수 구하기
+a = {1,2,3,4}
+print(len(a))
